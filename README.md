@@ -12,7 +12,7 @@ The Cats vs Dogs classifier using a Convolutional Neural Network (CNN) is a deep
 ### 3. **Model Architecture:**
    A typical CNN model for this task might look like this:
 
-   - **Input Layer:** Takes in images (e.g., 128x128x3 for RGB images).
+   - **Input Layer:** Takes in images (e.g., 256*256*3 for RGB images).
    
    - **Convolutional Layers:** 
      - Multiple convolutional layers with filters (e.g., 32, 64, 128) and small kernel sizes (3x3).
@@ -23,7 +23,7 @@ The Cats vs Dogs classifier using a Convolutional Neural Network (CNN) is a deep
      - The output from the convolutional layers is flattened into a 1D vector.
    
    - **Fully Connected (Dense) Layers:**
-     - Dense layers with a decreasing number of neurons (e.g., 512, 128, 64) are used, each followed by ReLU activation.
+     - Dense layers with a decreasing number of neurons (e.g., 128, 64) are used, each followed by ReLU activation.
    
    - **Output Layer:**
      - A final dense layer with a single neuron and a sigmoid activation function to output a probability (0 or 1) for classification into cat (0) or dog (1).
